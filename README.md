@@ -7,7 +7,6 @@ conservation object, its environment, and the planned CnR intervention), and
 — automatically receive a set of specific suitable as well as rejected intervention options for the
 case at hand, which can be further explored in terms of their characteristics and limitations.
 
-Information regarding the ontology and the framework have been published in:
 
 Moraitou, E., Christodoulou, Y., Kotis, K., Caridakis, G. (2024). An Ontology-Based Framework for Supporting Decision-Making in Conservation and Restoration Interventions for Cultural Heritage, Journal on Computing and Cultural Heritage, volume 17, issue 3, Association for Computing Machinery (ACM). https://doi.org/10.1145/3653977
 
