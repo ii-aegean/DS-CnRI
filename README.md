@@ -11,8 +11,6 @@ Information regarding the ontology and the framework have been published in:
 
 Moraitou, E., Christodoulou, Y., Kotis, K., Caridakis, G. (2024). An Ontology-Based Framework for Supporting Decision-Making in Conservation and Restoration Interventions for Cultural Heritage, Journal on Computing and Cultural Heritage, volume 17, issue 3, Association for Computing Machinery (ACM). https://doi.org/10.1145/3653977
 
-Moraitou, E., Christodoulou, Y., Kotis, K., Caridakis, G. (2023). An Ontology to Support Decision-Making in Conservation and Restoration Interventions of Cultural Heritage, Proceedings of the International Workshop on Semantic Web and Ontology Design for Cultural Heritage
-co-located with the International Semantic Web Conference 2023 (ISWC 2023). Available at: https://ceur-ws.org/Vol-3540/
 
 1. The folder "Mapping rules" includes the rules which have been formulated using the MappingMaster DSL (O’ Connor, M. - Mapping Master [https://github.com/protegeproject/mapping-master]).
 2. The folder "MS Excel Forms - Examples" includes examples of filled forms. The forms have been used for two different cases at hand according to the different stages of the framework
