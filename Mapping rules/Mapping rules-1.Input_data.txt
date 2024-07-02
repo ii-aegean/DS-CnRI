@@ -1,0 +1,177 @@
+*Choose Render by prefixed names
+
+-------------------------------------------------
+
+Sheet1 - Owner
+
+Individual: @A*
+	Types: cidoc-crm:E40_Legal_Body
+	Annotations: rdfs:label @B*
+-------------------------------------------------
+
+Sheet2 - Identifier
+
+Individual: @A*
+	Types: cidoc-crm:E42_Identifier
+	Annotations: rdfs:label @B*
+-------------------------------------------------
+
+Sheet3 - Title
+
+Individual: @A*
+	Types: cidoc-crm:E35_Title
+	Annotations: rdfs:label @B*
+-------------------------------------------------
+
+Sheet4 - Man-Made Object (Main)
+
+Individual: @A*
+	Types: cidoc-crm:E22_Man-Made_Object
+	Facts: dcri-ont:hasConservationObjectType @G*,
+		cidoc-crm:P102_has_title @E*,
+		cidoc-crm:P48_has_preferred_identifier @D*,
+		cidoc-crm:P52_has_current_owner @F*
+	Annotations: rdfs:label @B*
+--------------------------------------------------
+
+Sheet5 - Man-Made Object (Parts)
+
+Individual: @A*
+	Types: cidoc-crm:E22_Man-Made_Object
+	Facts: dcri-ont:hasConservationObjectType @D*
+	Annotations: rdfs:label @B*
+
+
+--------------------------------------------------
+
+Sheet6 - Components
+
+Individual: @A*
+	Facts: cidoc-crm:P46_is_composed_of @B*
+
+--------------------------------------------------
+
+Sheet7(1) - Physical feature
+
+Individual: @C*
+	Types: cidoc-crm:E26_Physical_Feature
+	Facts: dcri-ont:hasPhysicalFeatureType @F*
+	Annotations: rdfs:label @D*
+
+--------------------------------------------------
+
+
+Sheet7(2) - Physical feature
+
+Individual: @A*
+	Facts: cidoc-crm:P56_bears_feature @B*
+
+--------------------------------------------------
+
+Sheet8 - Materials
+
+Individual: @A*
+	Facts: cidoc-crm:P45_consists_of @B*
+
+--------------------------------------------------
+
+Sheet9 (1) - Dim
+
+Individual: @C*
+	Types:E54_Dimension	
+	Facts: cidoc-crm:P90_has_value @E*,
+		cidoc-crm:P91_has_unit @F*,
+		dcri-ont:refersToPropertyType @G*
+	Annotations: rdfs:label @D*
+
+--------------------------------------------------
+
+Sheet9 (2) - Dim
+
+Individual: @A*	
+	Facts: cidoc-crm:P45_has_dimension @B*
+	
+--------------------------------------------------
+
+Sheet10 (1) - Measurment
+
+Individual: @A*	
+	Types: E16_Measurement
+	Facts: cidoc-crm:P39_measures @C*,
+		cidoc-crm:P14_carried_out_by @D*,
+		cidoc-crm:P4_has_time-span E*
+	Annotations: rdfs:label @B*
+
+--------------------------------------------------
+
+Sheet10 (2) - Measurment
+
+Individual: @F*	
+	Facts: cidoc-crm:P40_observed_dimension @G*
+
+--------------------------------------------------
+
+Sheet11 - Actor
+
+Individual: @A*	
+	Types: cidoc-crm:E39_Actor
+	Annotations: rdfs:label @B*
+
+--------------------------------------------------
+
+Sheet12 - Production
+
+Individual: @A*	
+	Types: cidoc-crm:E12_Production
+	Facts: cidoc-crm:P108_has_produced @C*,
+		cidoc-crm:P14_carried_out_by @D*,
+		cidoc-crm:P4_has_time-span @E*
+	Annotations: rdfs:label @B*
+
+--------------------------------------------------
+
+Sheet13 - Acquisition
+
+Individual: @A*	
+	Types: cidoc-crm:E8_Aquisition
+    	Facts: cidoc-crm:P24_transferred_title_of @C*,
+		cidoc-crm:P23_transferred_title_from @D*,
+		cidoc-crm:P22_transferred_title_to @E*,
+		cidoc-crm:P4_has_time-span @F*
+	Annotations: rdfs:label @B*
+
+--------------------------------------------------
+
+Sheet14 (1) - Attribute assignment
+
+Individual: @A*	
+	Types: cidoc-crm:E13_Attribute_Assignment
+    	Facts: cidoc-crm:P140_assigned_attribute_to @C*,
+		cidoc-crm:P14_carried_out_by @D*
+		cidoc-crm:P4_has_time-span @E*
+	Annotations: rdfs:label @B*
+
+--------------------------------------------------
+
+Sheet14 (2) - Attribute assignment
+
+Individual: @F*	
+    	Facts: cidoc-crm:P141_assigned @G*
+
+--------------------------------------------------
+
+Sheet14 (3) - Attribute assignment
+
+Individual: @H*	
+    	Facts: ntp:NTP141_assigned_entity_of_type @I*
+
+--------------------------------------------------
+
+Sheet15 - Time-Span
+
+Individual: @A*
+	Types:cidoc-crm:E52_Time-Span
+	Facts:cidoc-crm:P82_at_some_time_within @C*
+	Annotations: rdfs:label @B*
+
+

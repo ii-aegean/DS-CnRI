@@ -1,0 +1,32 @@
+*Choose Render by prefixed names
+
+
+
+Sheet4 (1) - Documentation (Import)
+
+Individual: @I*
+	Facts: cidoc-crm:P82_at_some_time_within @K*
+		
+-------------------------------------------------
+
+
+Sheet4 (1) - Documentation (Import)
+
+Individual: @A*
+	Types: dcri-ont:ConservationAndRestorationInterventionDecision-making
+	Facts: cidoc-crm:P17_was_motivated_by @C*,
+		cidoc-crm:P4_has_time-span @D*,
+		cidoc-crm:P14_carried_out_by @E,
+		dcri-ont:hasIssue @F*
+	Annotations: rdfs:label @B*
+--------------------------------------------------
+
+Sheet4 (2) - Documentation (Import)
+
+Individual: @G*
+	Facts: dcri-ont:stipulates @H*
+
+
+
+
+

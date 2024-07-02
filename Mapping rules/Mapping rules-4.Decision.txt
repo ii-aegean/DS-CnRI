@@ -1,0 +1,16 @@
+*Choose Render by prefixed names
+
+-------------------------------------------------
+
+Sheet10 (1) - Documentation (import)
+
+Individual: @A*
+	Types: dcri-ont:ConservationAndRestorationInterventionDecision-makingDecision
+	Facts: dcri-ont:indicates @E*
+	Annotations: rdfs:label @B*
+-------------------------------------------------
+Sheet10 (2) - Documentation (import)
+
+Individual: @C*
+	Facts: dcri-ont:hasDecision @D*
+-------------------------------------------------

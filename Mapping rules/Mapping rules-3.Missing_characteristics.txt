@@ -1,0 +1,80 @@
+*Choose Render by prefixed names
+
+-------------------------------------------------
+
+
+
+Documentation (import)
+
+Individual: @A*	
+	Facts: dcri-ont:does_not_consist_of @B*
+
+-------------------------------------------------
+
+Documentation (import)
+
+Individual: @A*	
+	Facts: cidoc-crm:P45_consists_of @C*
+
+-------------------------------------------------
+
+Documentation (import)
+
+Individual: @D*	
+	Facts: NTP:NTP56_does_not_bear_feature_of_type @E*
+
+-------------------------------------------------
+
+Documentation (import)
+
+Individual: @F*
+	Types: cidoc-crm:E26_Physical_Feature
+	Facts: dcri-ont:hasPhysicalFeatureType @H*
+	Annotations: rdfs:label @G*
+
+--------------------------------------------------
+
+Documentation (import)
+
+Individual: @I*
+	Facts: cidoc-crm:P56_bears_feature @J*
+
+--------------------------------------------------
+
+Documentation (import)
+
+Individual: @K*	
+	Facts: dcri-ont:has_not_qualitative_value @L*
+
+-------------------------------------------------
+
+Documentation (import)
+
+Individual: @M*	
+	Facts: dcri-ont:has_qualitative_value @N*
+
+-------------------------------------------------
+
+Documentation (import)
+
+Individual: @Q*
+	Types:cidoc-crm:E13_Attribute_Assignment
+	Facts: cidoc-crm:P140_assigned_attribute_to @S*
+	       cidoc-crm:P14_carried_out_by @T*
+	Annotations:rdfs:label @R*
+
+--------------------------------------------------
+
+Documentation (import)
+
+Individual: @O*	
+    	Facts: ntp:TP141_assigned_entity_of_type @P*
+
+-----------------------------------------------
+
+Documentation (import)
+
+Individual: @U*	
+    	Types: cidoc-crm:P141_assigned @V*
+
+

@@ -1,0 +1,543 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/example_1#"
+     xml:base="http://www.semanticweb.org/example_1"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:CRMsci="http://www.cidoc-crm.org/cidoc-crm/CRMsci/"
+     xmlns:crmntp="http://www.cidoc-crm.org/extensions/crmntp/"
+     xmlns:dcri-ont="http://w3id.org/dcri-ont/"
+     xmlns:cidoc-crm="http://www.cidoc-crm.org/cidoc-crm/"
+     xmlns:dcri-ont-spe="http://w3id.org/dcri-ont/special/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/example_1">
+        <owl:imports rdf:resource="http://w3id.org/dcri-ont"/>
+        <owl:imports rdf:resource="http://w3id.org/dcri-ont/special/"/>
+        <owl:imports rdf:resource="http://w3id.org/dcri-ont/vocabulary/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/Foteini_Alexopoulou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/Foteini_Alexopoulou">
+        <rdf:type rdf:resource="http://w3id.org/dcri-ont/ConservationAndRestorationInterventionDecision-maker"/>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+        <rdfs:label xml:lang="en">Foteini Alexopoulou</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/Painter_of_Artwork_1001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/Painter_of_Artwork_1001">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+        <rdfs:label xml:lang="en">Painter of Artwork 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/legal_body_emst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/legal_body_emst">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E40_Legal_Body"/>
+        <rdfs:label xml:lang="en">EMST</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:label xml:lang="en">ID 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_acq_ts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_acq_ts">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+        <cidoc-crm:P82_at_some_time_within rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</cidoc-crm:P82_at_some_time_within>
+        <rdfs:label xml:lang="en">time-span, acquisition, Artwork 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_art_work_acquisition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_art_work_acquisition">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E8_Acquisition"/>
+        <cidoc-crm:P22_transferred_title_to rdf:resource="http://www.semanticweb.org/example_1/legal_body_emst"/>
+        <cidoc-crm:P23_transferred_title_from rdf:resource="http://www.semanticweb.org/example_1/Painter_of_Artwork_1001"/>
+        <cidoc-crm:P24_transferred_title_of rdf:resource="http://www.semanticweb.org/example_1/1001_artwork"/>
+        <cidoc-crm:P4_has_time-span rdf:resource="http://www.semanticweb.org/example_1/1001_acq_ts"/>
+        <rdfs:label xml:lang="en">acquisition, Artwork 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_art_work_depth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_art_work_depth">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <dcri-ont:refersToPropertyType rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00162"/>
+        <cidoc-crm:P91_has_unit rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00157"/>
+        <dcri-ont-spe:hasDepthQuantitativeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</dcri-ont-spe:hasDepthQuantitativeValue>
+        <rdfs:label xml:lang="en">depth, Artwork 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_art_work_height -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_art_work_height">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <dcri-ont:refersToPropertyType rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00163"/>
+        <cidoc-crm:P91_has_unit rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00157"/>
+        <dcri-ont-spe:hasHeightQuantitativeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">252</dcri-ont-spe:hasHeightQuantitativeValue>
+        <rdfs:label xml:lang="en">height, Artwork 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_art_work_width -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_art_work_width">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <dcri-ont:refersToPropertyType rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00161"/>
+        <cidoc-crm:P91_has_unit rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00157"/>
+        <dcri-ont-spe:hasWidthQuantitativeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">302</dcri-ont-spe:hasWidthQuantitativeValue>
+        <rdfs:label xml:lang="en">width, Artwork 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_artwork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_artwork">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"/>
+        <dcri-ont:hasConservationObjectType rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00245"/>
+        <cidoc-crm:P102_has_title rdf:resource="http://www.semanticweb.org/example_1/1001_artwork_title"/>
+        <cidoc-crm:P46_is_composed_of rdf:resource="http://www.semanticweb.org/example_1/1001_painting"/>
+        <cidoc-crm:P46_is_composed_of rdf:resource="http://www.semanticweb.org/example_1/1001_pole"/>
+        <cidoc-crm:P48_has_preferred_identifier rdf:resource="http://www.semanticweb.org/example_1/1001"/>
+        <cidoc-crm:P52_has_current_owner rdf:resource="http://www.semanticweb.org/example_1/legal_body_emst"/>
+        <CRMsci:O12_has_dimension rdf:resource="http://www.semanticweb.org/example_1/1001_art_work_depth"/>
+        <CRMsci:O12_has_dimension rdf:resource="http://www.semanticweb.org/example_1/1001_art_work_height"/>
+        <CRMsci:O12_has_dimension rdf:resource="http://www.semanticweb.org/example_1/1001_art_work_width"/>
+        <rdfs:label xml:lang="en">Artwork 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_artwork_measurement_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_artwork_measurement_1">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E16_Measurement"/>
+        <cidoc-crm:P14_carried_out_by rdf:resource="http://www.semanticweb.org/example_1/Foteini_Alexopoulou"/>
+        <cidoc-crm:P39_measured rdf:resource="http://www.semanticweb.org/example_1/1001_artwork"/>
+        <cidoc-crm:P40_observed_dimension rdf:resource="http://www.semanticweb.org/example_1/1001_art_work_depth"/>
+        <cidoc-crm:P40_observed_dimension rdf:resource="http://www.semanticweb.org/example_1/1001_art_work_height"/>
+        <cidoc-crm:P40_observed_dimension rdf:resource="http://www.semanticweb.org/example_1/1001_art_work_width"/>
+        <rdfs:label xml:lang="en">measurement 1, Artwork 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_artwork_production -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_artwork_production">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E12_Production"/>
+        <cidoc-crm:P108_has_produced rdf:resource="http://www.semanticweb.org/example_1/1001_artwork"/>
+        <cidoc-crm:P14_carried_out_by rdf:resource="http://www.semanticweb.org/example_1/Painter_of_Artwork_1001"/>
+        <cidoc-crm:P4_has_time-span rdf:resource="http://www.semanticweb.org/example_1/1001_pr_ts"/>
+        <rdfs:label xml:lang="en">production, Artwork 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_artwork_title -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_artwork_title">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E35_Title"/>
+        <rdfs:label xml:lang="en">Title of 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_attass_1_p_ts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_attass_1_p_ts">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+        <cidoc-crm:P82_at_some_time_within>22/2/2023</cidoc-crm:P82_at_some_time_within>
+        <rdfs:label xml:lang="en">time-span, attribute assignment 1, Pole 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_attass_1_pl_ts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_attass_1_pl_ts">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+        <cidoc-crm:P82_at_some_time_within>22/2/2023</cidoc-crm:P82_at_some_time_within>
+        <rdfs:label xml:lang="en">time-span, attribute assignment 1, Painting layer 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_attass_1_subl_ts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_attass_1_subl_ts">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+        <cidoc-crm:P82_at_some_time_within>22/2/2023</cidoc-crm:P82_at_some_time_within>
+        <rdfs:label xml:lang="en">time-span, attribute assignment 1, Substrate layer 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_attass_1_supl_ts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_attass_1_supl_ts">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+        <cidoc-crm:P82_at_some_time_within>22/2/2023</cidoc-crm:P82_at_some_time_within>
+        <rdfs:label xml:lang="en">time-span, attribute assignment 1, Support layer 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_dm_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_dm_1">
+        <rdf:type rdf:resource="http://w3id.org/dcri-ont/ConservationAndRestorationInterventionDecision-making"/>
+        <dcri-ont:hasIssue rdf:resource="http://w3id.org/dcri-ont/special/dmi_cleaning_superficial_deposit"/>
+        <dcri-ont:stipulates rdf:resource="http://w3id.org/dcri-ont/special/dmcr_cleaning_superficial_deposit_001"/>
+        <dcri-ont:stipulates rdf:resource="http://w3id.org/dcri-ont/special/dmr_cleaning_superficial_deposit_052"/>
+        <cidoc-crm:P14_carried_out_by rdf:resource="http://www.semanticweb.org/example_1/Foteini_Alexopoulou"/>
+        <cidoc-crm:P17_was_motivated_by rdf:resource="http://www.semanticweb.org/example_1/1001_painting_layer"/>
+        <cidoc-crm:P4_has_time-span rdf:resource="http://www.semanticweb.org/example_1/1001_dm_1_ts"/>
+        <rdfs:label xml:lang="en">decision making 1, Artwork 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_dm_1_d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_dm_1_d">
+        <rdf:type rdf:resource="http://w3id.org/dcri-ont/ConservationAndRestorationInterventionDecision-makingDecision"/>
+        <dcri-ont:indicates rdf:resource="http://w3id.org/dcri-ont/special/dmo_cleaning_superficial_deposit_006"/>
+        <rdfs:label xml:lang="en">decision, decision making 1, Artwork 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_dm_1_ts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_dm_1_ts">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+        <cidoc-crm:P82_at_some_time_within>22/2/2023</cidoc-crm:P82_at_some_time_within>
+        <rdfs:label xml:lang="en">time-span, decision making 1, Artwork 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_meas_ts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_meas_ts">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+        <cidoc-crm:P82_at_some_time_within>22/2/2023</cidoc-crm:P82_at_some_time_within>
+        <rdfs:label xml:lang="en">time-span, measurement, Artwork 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_painting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_painting">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"/>
+        <dcri-ont:hasConservationObjectType rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00245"/>
+        <cidoc-crm:P46_is_composed_of rdf:resource="http://www.semanticweb.org/example_1/1001_painting_layer"/>
+        <cidoc-crm:P46_is_composed_of rdf:resource="http://www.semanticweb.org/example_1/1001_substrate_layer"/>
+        <cidoc-crm:P46_is_composed_of rdf:resource="http://www.semanticweb.org/example_1/1001_support_layer"/>
+        <rdfs:label xml:lang="en">Painting 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_painting_layer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_painting_layer">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"/>
+        <dcri-ont:doesNotConsistOf rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00155"/>
+        <dcri-ont:hasConservationObjectType rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00211"/>
+        <dcri-ont:hasNotQualitativeValue rdf:resource="http://w3id.org/dcri-ont/special/qv_00061"/>
+        <cidoc-crm:P45_consists_of rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00177"/>
+        <cidoc-crm:P56_bears_feature rdf:resource="http://www.semanticweb.org/example_1/1001_painting_layer_pf_1"/>
+        <cidoc-crm:P56_bears_feature rdf:resource="http://www.semanticweb.org/example_1/1001_painting_layer_pf_2"/>
+        <crmntp:NTP56_does_not_bear_feature_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00083"/>
+        <crmntp:NTP56_does_not_bear_feature_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00085"/>
+        <crmntp:NTP56_does_not_bear_feature_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00087"/>
+        <crmntp:NTP56_does_not_bear_feature_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00088"/>
+        <crmntp:NTP56_does_not_bear_feature_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00091"/>
+        <crmntp:NTP56_does_not_bear_feature_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00092"/>
+        <crmntp:NTP56_does_not_bear_feature_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00181"/>
+        <crmntp:NTP56_does_not_bear_feature_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00184"/>
+        <crmntp:NTP56_does_not_bear_feature_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00196"/>
+        <crmntp:NTP56_does_not_bear_feature_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00244"/>
+        <rdfs:label xml:lang="en">Painting layer 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_painting_layer_attribute_assignment_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_painting_layer_attribute_assignment_1">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+        <cidoc-crm:P140_assigned_attribute_to rdf:resource="http://www.semanticweb.org/example_1/1001_painting_layer"/>
+        <cidoc-crm:P141_assigned rdf:resource="http://www.semanticweb.org/example_1/1001_painting_layer_pf_1"/>
+        <cidoc-crm:P141_assigned rdf:resource="http://www.semanticweb.org/example_1/1001_painting_layer_pf_2"/>
+        <cidoc-crm:P14_carried_out_by rdf:resource="http://www.semanticweb.org/example_1/Foteini_Alexopoulou"/>
+        <cidoc-crm:P4_has_time-span rdf:resource="http://www.semanticweb.org/example_1/1001_attass_1_pl_ts"/>
+        <CRMsci:O13_triggers rdf:resource="http://www.semanticweb.org/example_1/1001_dm_1"/>
+        <crmntp:TP141_assigned_entity_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00177"/>
+        <rdfs:label xml:lang="en">attribute assignment 1, Painting layer 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_painting_layer_attribute_assignment_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_painting_layer_attribute_assignment_2">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+        <cidoc-crm:P14_carried_out_by rdf:resource="http://www.semanticweb.org/example_1/Foteini_Alexopoulou"/>
+        <crmntp:TP141_assigned_entity_of_type rdf:resource="http://w3id.org/dcri-ont/special/qv_00061"/>
+        <crmntp:TP141_assigned_entity_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00083"/>
+        <crmntp:TP141_assigned_entity_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00085"/>
+        <crmntp:TP141_assigned_entity_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00087"/>
+        <crmntp:TP141_assigned_entity_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00088"/>
+        <crmntp:TP141_assigned_entity_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00091"/>
+        <crmntp:TP141_assigned_entity_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00092"/>
+        <crmntp:TP141_assigned_entity_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00155"/>
+        <crmntp:TP141_assigned_entity_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00181"/>
+        <crmntp:TP141_assigned_entity_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00184"/>
+        <crmntp:TP141_assigned_entity_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00196"/>
+        <crmntp:TP141_assigned_entity_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00244"/>
+        <rdfs:label xml:lang="en">attribute assignment 2, Painting layer 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_painting_layer_pf_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_painting_layer_pf_1">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature"/>
+        <dcri-ont:hasPhysicalFeatureType rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00075"/>
+        <rdfs:label xml:lang="en">physical feature 1, painting layer 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_painting_layer_pf_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_painting_layer_pf_2">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature"/>
+        <dcri-ont:hasPhysicalFeatureType rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00238"/>
+        <rdfs:label xml:lang="en">physical feature 2, painting layer 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_pole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_pole">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"/>
+        <dcri-ont:hasConservationObjectType rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00246"/>
+        <cidoc-crm:P45_consists_of rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00154"/>
+        <cidoc-crm:P56_bears_feature rdf:resource="http://www.semanticweb.org/example_1/1001_pole_pf_1"/>
+        <rdfs:label xml:lang="en">Pole 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_pole_attribute_assignment_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_pole_attribute_assignment_1">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+        <cidoc-crm:P140_assigned_attribute_to rdf:resource="http://www.semanticweb.org/example_1/1001_pole"/>
+        <cidoc-crm:P14_carried_out_by rdf:resource="http://www.semanticweb.org/example_1/Foteini_Alexopoulou"/>
+        <cidoc-crm:P42_assigned rdf:resource="http://www.semanticweb.org/example_1/1001_pole_pf_1"/>
+        <cidoc-crm:P4_has_time-span rdf:resource="http://www.semanticweb.org/example_1/1001_attass_1_p_ts"/>
+        <crmntp:TP141_assigned_entity_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00154"/>
+        <rdfs:label xml:lang="en">attribute assignment 1, Pole 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_pole_pf_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_pole_pf_1">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature"/>
+        <dcri-ont:hasPhysicalFeatureType rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00075"/>
+        <rdfs:label xml:lang="en">physical feature 1, pole 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_pr_ts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_pr_ts">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+        <cidoc-crm:P82_at_some_time_within rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1985</cidoc-crm:P82_at_some_time_within>
+        <rdfs:label xml:lang="en">time-span, production, Artwork 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_substrate_layer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_substrate_layer">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"/>
+        <dcri-ont:doesNotConsistOf rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00065"/>
+        <dcri-ont:hasConservationObjectType rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00214"/>
+        <cidoc-crm:P45_consists_of rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00031"/>
+        <cidoc-crm:P56_bears_feature rdf:resource="http://www.semanticweb.org/example_1/1001_substrate_layer_pf_1"/>
+        <rdfs:label xml:lang="en">Substrate layer 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_substrate_layer_attribute_assignment_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_substrate_layer_attribute_assignment_1">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+        <cidoc-crm:P140_assigned_attribute_to rdf:resource="http://www.semanticweb.org/example_1/1001_substrate_layer"/>
+        <cidoc-crm:P14_carried_out_by rdf:resource="http://www.semanticweb.org/example_1/Foteini_Alexopoulou"/>
+        <cidoc-crm:P42_assigned rdf:resource="http://www.semanticweb.org/example_1/1001_substrate_layer_pf_1"/>
+        <cidoc-crm:P42_assigned rdf:resource="http://www.semanticweb.org/example_1/1001_substrate_layer_pf_2"/>
+        <cidoc-crm:P4_has_time-span rdf:resource="http://www.semanticweb.org/example_1/1001_attass_1_subl_ts"/>
+        <crmntp:TP141_assigned_entity_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00031"/>
+        <rdfs:label xml:lang="en">attribute assignment 1, Substrate layer 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_substrate_layer_attribute_assignment_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_substrate_layer_attribute_assignment_2">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+        <cidoc-crm:P140_assigned_attribute_to rdf:resource="http://www.semanticweb.org/example_1/1001_substrate_layer"/>
+        <cidoc-crm:P14_carried_out_by rdf:resource="http://www.semanticweb.org/example_1/Foteini_Alexopoulou"/>
+        <crmntp:TP141_assigned_entity_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00065"/>
+        <rdfs:label xml:lang="en">attribute assignment 2, Substrate layer 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_substrate_layer_pf_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_substrate_layer_pf_1">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature"/>
+        <dcri-ont:hasPhysicalFeatureType rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00075"/>
+        <rdfs:label xml:lang="en">physical feature 1, substrate layer 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_substrate_layer_pf_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_substrate_layer_pf_2">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S20_Rigid_Physical_Feature"/>
+        <dcri-ont:hasPhysicalFeatureType rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00238"/>
+        <rdfs:label xml:lang="en">physical feature 2, substrate layer 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_support_layer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_support_layer">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"/>
+        <dcri-ont:hasConservationObjectType rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00213"/>
+        <cidoc-crm:P45_consists_of rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00070"/>
+        <cidoc-crm:P56_bears_feature rdf:resource="http://www.semanticweb.org/example_1/1001_support_layer_pf_1"/>
+        <rdfs:label xml:lang="en">Support layer 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_support_layer_attribute_assignment_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_support_layer_attribute_assignment_1">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+        <cidoc-crm:P140_assigned_attribute_to rdf:resource="http://www.semanticweb.org/example_1/1001_support_layer"/>
+        <cidoc-crm:P14_carried_out_by rdf:resource="http://www.semanticweb.org/example_1/Foteini_Alexopoulou"/>
+        <cidoc-crm:P42_assigned rdf:resource="http://www.semanticweb.org/example_1/1001_support_layer_pf_1"/>
+        <cidoc-crm:P4_has_time-span rdf:resource="http://www.semanticweb.org/example_1/1001_attass_1_supl_ts"/>
+        <crmntp:TP141_assigned_entity_of_type rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00070"/>
+        <rdfs:label xml:lang="en">attribute assignment 1, Support layer 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/example_1/1001_support_layer_pf_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/example_1/1001_support_layer_pf_1">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature"/>
+        <dcri-ont:hasPhysicalFeatureType rdf:resource="http://w3id.org/dcri-ont/vocabulary/concept_00075"/>
+        <rdfs:label xml:lang="en">physical feature 1, support layer 1001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/example_1/1001_painting_layer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/example_1/1001_substrate_layer"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/example_1/1001_painting_layer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/example_1/1001_support_layer"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/example_1/1001_substrate_layer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/example_1/1001_support_layer"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
