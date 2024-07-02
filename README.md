@@ -14,7 +14,7 @@ Moraitou, E., Christodoulou, Y., Kotis, K., Caridakis, G. (2024). An Ontology-Ba
 Moraitou, E., Christodoulou, Y., Kotis, K., Caridakis, G. (2023). An Ontology to Support Decision-Making in Conservation and Restoration Interventions of Cultural Heritage, Proceedings of the International Workshop on Semantic Web and Ontology Design for Cultural Heritage
 co-located with the International Semantic Web Conference 2023 (ISWC 2023). Available at: https://ceur-ws.org/Vol-3540/
 
-1. The folder "Mapping rules" includes the rules which have been formulated using the MappingMaster DSL (O’ Connor, M. - Mapping Master [https://github.com/protegeproject/mapping-master]). They can be applied using the Protege Cellfie plugin (O’ Connor, M. - Cellfie plugin [https://github.com/protegeproject/cellfie-plugin]).
-2. The folder "MS Excel Forms - Examples" includes examples of filled forms. The forms have been for two different cases at hand according to the different stages of the framework
+1. The folder "Mapping rules" includes the rules which have been formulated using the MappingMaster DSL (O’ Connor, M. - Mapping Master [https://github.com/protegeproject/mapping-master]).
+2. The folder "MS Excel Forms - Examples" includes examples of filled forms. The forms have been used for two different cases at hand according to the different stages of the framework
 3. The folder "OWL Examples" includes examples of two different cases at hand and their results for the decision-making process.
 4. The folder "SPARQL Queries" includes the different queries that have been formulated for the different stages of the framework.
